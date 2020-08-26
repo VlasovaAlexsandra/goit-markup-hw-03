@@ -57,10 +57,14 @@ html {
     margin-right: auto;
     padding-right: 15px;
     padding-left: 15px;
+
+    outline: 3px solid tomato;
 }
 
 .list {
     list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 /* site-nav */
@@ -101,6 +105,8 @@ html {
 /* hero */
 .hero-title {
     /* padding: 200px 452px; */
+    margin-top: 0px;
+    margin-bottom: 30px;
     
     color: var(--hero-text-color);
     /* max-width: 696px; */
@@ -121,7 +127,20 @@ html {
 }
 
 /* section */
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section.no-padding {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
 .section-title {
+    margin-top: 0px;
+    margin-bottom: 50px;
     color: var(--title-text-color);
     
     font-weight: bold;
@@ -147,6 +166,9 @@ li :last-child {
 }
 
 .list-title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+
     color: var(--title-text-color);
     
     font-weight: bold;
@@ -205,6 +227,8 @@ li :last-child {
 
 .button.primary {
     border-radius: 4px;
+    padding: 10px 32px;
+    border: 1px solid transparent;
     
     background-color: var(--accent-text-color);
     color: #FFFFFF;
@@ -219,7 +243,10 @@ li :last-child {
 }
 
 .btn .button.primary {
-    background: var(--button-bg-color);
+    padding: 6px 22px;
+       
+
+    background-color: var(--button-bg-color);
     color: var(--button-text-color);
 
     font-family: inherit;      
@@ -232,16 +259,20 @@ li :last-child {
 .btn .button.primary:hover,
 .btn .button.primary:focus {
     background-color: var(--accent-text-color);
-    color: #FFFFFF;
+    color: #FFFFFF;    
+     
 }
 
 /* footer */
 .footer {
     background-color: var(--bgr-footer);
-    padding: 60px 1240px 60px 215px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.address {    
+.address {
+    margin-top: 20px;
+    
     color: var(--footer-text-color); 
     font-style: normal;   
 
