@@ -10,17 +10,24 @@ html {
 
 :root {
     --primary-text-color: #757575;
+    --header-bg-color: #FFFFFF;
     --title-text-color: #212121;
     --accent-text-color: #2196F3;
     --logo-text-color: #000000;
     --hero-text-color: #FFFFFF;
     --primary-bg-color: #E5E5E5;
+    --staff-bg-color: #F5F4FA;
     --footer-text-color: #FFFFFF;
     --button-text-color: #212121;
     --address-text-color: rgba(255, 255, 255, 0.6);
     --button-bg-color: #F5F4FA;
     --bgr-hero: #2F303A;
     --bgr-footer: #2F303A;
+}
+
+/* header */
+.page-header {
+    background-color: var(--header-bg-color);
 }
 
 /* logo */
@@ -193,6 +200,10 @@ html {
     flex-grow: 1;
 }
 
+/* .staff {
+    background-color: var(--staff-bg-color); */
+}
+
 li :last-child {
     margin-right: 0;      
 }
@@ -253,7 +264,7 @@ img {
 .list-text {
     color: var(--primary-text-color);
     
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.87;    
     letter-spacing: 0.03em; 
 }
