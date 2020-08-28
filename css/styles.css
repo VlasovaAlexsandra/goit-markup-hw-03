@@ -59,7 +59,7 @@ html {
     padding-right: 15px;
     padding-left: 15px;
 
-    outline: 3px solid tomato;
+    /* outline: 3px solid tomato; */
 }
 
 .flexbox {
@@ -275,7 +275,7 @@ img {
 .list-projects {
     display: flex;
     flex-wrap: wrap;
-    background-color: teal;    
+    /* background-color: teal;     */
 }
 
 .projects {
