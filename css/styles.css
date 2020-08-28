@@ -25,6 +25,7 @@ html {
 
 /* logo */
 .logo {
+    margin-right: 93px;
     color: var(--logo-text-color);
     text-decoration: none;
 
@@ -59,6 +60,38 @@ html {
     padding-left: 15px;
 
     outline: 3px solid tomato;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.navigation {
+    display: flex;  
+    align-items: center; 
+    justify-content: flex-end;    
+}
+
+.site-nav {
+    display: flex;   
+}
+
+.site-item:not(:last-child) {
+    margin-right: 50px;
+    
+}
+
+.contacts-item {
+    margin-left: auto;
+}
+
+.contacts {
+    display: flex;    
 }
 
 .list {
@@ -133,6 +166,11 @@ html {
     padding-bottom: 94px;
 }
 
+.section-btn {
+    padding-top: 94px;
+    padding-bottom: 0;
+}
+
 .section.no-padding {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -150,9 +188,22 @@ html {
     letter-spacing: 0.03em; 
 }
 
-.img {
-    display: inline-block;
-    margin-right: 30px;   
+.prioritet {
+    max-width: 270px;
+    flex-grow: 1;
+}
+
+li :last-child {
+    margin-right: 0;      
+}
+/* 
+img {
+    /* display: inline-block; */
+    /* margin-right: 30px;   
+} */ */
+
+img:not(last-child) {
+    margin-right: 30px;
 }
 
 img {
@@ -161,9 +212,10 @@ img {
     height: auto;
 }
 
-li :last-child {
-    margin-right: 0;      
+.content-box:not(:last-child) {
+    margin-right: 30px;
 }
+
 
 .list-title {
     margin-top: 0px;
@@ -216,6 +268,40 @@ li :last-child {
 
 }
 
+.section-price {
+    padding-top: 34px;
+}
+
+.list-projects {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: teal;    
+}
+
+.projects {
+    margin: 20px 24px;
+}
+
+.flex-elemets {
+    margin-bottom: 50px;
+}
+
+.flex-elemets:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+.section .flex-elemets {
+    background-color: #fff;
+}
+
+/* .flex-elemets {
+    flex-basis: calc((100% - 2 * 30px) / 3);
+} */
+
+.flex-elemets:nth-child(3n) {
+    margin-right: 0px;
+}
+
 .projects-text {
     color: var(--primary-text-color);
 
@@ -225,7 +311,16 @@ li :last-child {
     letter-spacing: 0.03em; 
 }
 
+.btn {
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-bottom: 0;
+}
+
 .button.primary {
+    margin-right: 8px;
+    /* width: calc(100% - 8px * 4) / 5; */
+
     border-radius: 4px;
     padding: 10px 32px;
     border: 1px solid transparent;
@@ -241,6 +336,11 @@ li :last-child {
     text-align: center;
     letter-spacing: 0.06em; 
 }
+
+/* .button.primary:last-child {
+    margin-right: 0px;
+} */
+
 
 .btn .button.primary {
     padding: 6px 22px;
